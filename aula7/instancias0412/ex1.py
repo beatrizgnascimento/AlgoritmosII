@@ -29,6 +29,7 @@ def insertion_sort(l): #armazena o numero do loop em uma variavel e verifica se 
     
 f = open(sys.argv[1], "r")
 loriginal = f.read().split()
+loriginal = [int(i) for i in loriginal]
 l = loriginal.copy()
 l.sort()
 l.reverse()
